@@ -22,14 +22,7 @@ import GoTop from '../components/Shared/GoTop';
 import App from 'next/app'
 
 class MyApp extends App {
-  static async getInitialProps ({ Component, ctx }) {
-      return {
-          pageProps: Component.getInitialProps
-          ? await Component.getInitialProps(ctx)
-          : {}
-      }
-  }
-
+ 
   // Preloader
   state = {
       loading: true
